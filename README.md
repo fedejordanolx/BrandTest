@@ -17,12 +17,14 @@ For each [BrandName]Colors.swift you will have to set the corresponding target i
 
 With this approach, the colors can be used in this way:
 
+``` swift
 navigationController?.navigationBar.barTintColor = AppColor.navigationBackgroundColor
 navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: AppColor.navigationTitleColor]
 firstLabel.textColor = AppColor.labelFirstColor
 secondLabel.textColor = AppColor.labelSecondColor
 thirdLabel.textColor = AppColor.labelCommonColor
 button.setTitleColor(AppColor.buttonColor, for: .normal)
+```
 
 ### Images management
 

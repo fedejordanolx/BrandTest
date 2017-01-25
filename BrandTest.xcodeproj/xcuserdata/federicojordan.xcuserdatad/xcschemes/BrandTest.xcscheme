@@ -86,6 +86,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "FirstBrand"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

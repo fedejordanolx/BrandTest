@@ -11,8 +11,8 @@ import UIKit
 
 class AppColorHelper {
     
-    class func color(fromElementColor elementColor: AppColor) -> UIColor {
-        switch elementColor {
+    class func color(fromAppColor appColor: AppColor) -> UIColor {
+        switch appColor {
         case .labelFirst:              return SecondBrandPalette.red
         case .labelSecond:             return SecondBrandPalette.green
         case .button:                  return SecondBrandPalette.yellow

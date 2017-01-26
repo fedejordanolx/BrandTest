@@ -17,6 +17,6 @@ enum AppColor: String {
     case navigationBackground
     
     var color: UIColor {
-        return AppColorHelper.color(fromElementColor: self)
+        return AppColorHelper.color(fromAppColor: self)
     }
 }

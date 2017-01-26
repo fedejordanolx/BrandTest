@@ -35,7 +35,7 @@ extension ViewController {
 //        secondLabel.textColor = AppColor.labelSecondColor
 //        thirdLabel.textColor = AppColor.labelCommonColor
 //        button.setTitleColor(ColorHelper.color(fromAppColor: AppColor.buttonColor), for: .normal)
-        thirdLabel.textColor =  AppColor.labelFirstColor.color
+        thirdLabel.textColor =  AppColor.labelSecond.color
     }
 }
 

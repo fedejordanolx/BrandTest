@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct Color {
+    
     static let gray = UIColor.gray
     static let red = UIColor.red
     static let green = UIColor.green
@@ -20,11 +21,3 @@ struct Color {
     static let darkGray = UIColor.darkGray
     static let yellow = UIColor.yellow
 }
-
-//enum AppColor {
-//    case gray
-//    case red
-//    case green
-//    case blue1
-//    case blue2
-//}

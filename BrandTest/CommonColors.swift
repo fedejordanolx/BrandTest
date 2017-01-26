@@ -7,7 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
-struct AppColor {
-    static let labelCommonColor = Color.green
+enum AppColor: String {
+    case labelCommonColor
+    case labelFirstColor
+    case labelSecondColor
+    case buttonColor
+    case navigationTitleColor
+    case navigationBackgroundColor
+    
+    static let commonColorsDict = [AppColor.labelCommonColor.rawValue: Color.green]
 }

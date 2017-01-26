@@ -29,12 +29,12 @@ class ViewController: UIViewController {
 extension ViewController {
     
     func setupInterface() {
-        navigationController?.navigationBar.barTintColor = AppColor.navigationBackgroundColor
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: AppColor.navigationTitleColor]
-        firstLabel.textColor = AppColor.labelFirstColor
-        secondLabel.textColor = AppColor.labelSecondColor
-        thirdLabel.textColor = AppColor.labelCommonColor
-        button.setTitleColor(AppColor.buttonColor, for: .normal)
+//        navigationController?.navigationBar.barTintColor = ColorHelper.color(fromAppColor: AppColor.navigationBackgroundColor)
+//        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: ColorHelper.color(fromAppColor: AppColor.navigationTitleColor)]
+//        firstLabel.textColor = AppColor.labelFirstColor
+//        secondLabel.textColor = AppColor.labelSecondColor
+//        thirdLabel.textColor = AppColor.labelCommonColor
+//        button.setTitleColor(ColorHelper.color(fromAppColor: AppColor.buttonColor), for: .normal)
     }
 }
 

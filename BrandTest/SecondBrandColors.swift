@@ -9,9 +9,11 @@
 import Foundation
 
 extension AppColor {
-    static let labelFirstColor = Color.blue2
-    static let labelSecondColor = Color.green
-    static let buttonColor = Color.red
-    static let navigationTitleColor = Color.yellow
-    static let navigationBackgroundColor = Color.black
+    
+    static let brandColorsArray = [
+        AppColor.labelFirstColor.rawValue:              Color.blue2,
+        AppColor.labelSecondColor.rawValue:             Color.green,
+        AppColor.buttonColor.rawValue:                  Color.red,
+        AppColor.navigationTitleColor.rawValue:         Color.yellow,
+        AppColor.navigationBackgroundColor.rawValue:    Color.black]
 }

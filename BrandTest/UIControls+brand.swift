@@ -9,27 +9,15 @@
 import Foundation
 import UIKit
 
-class ColorHelper {
-    
-    fileprivate class func color(fromStringID identifier: String) -> UIColor {
-        if let color = AppColor.commonColorsDict[identifier] {
-            return color
-        } else if let color = AppColor.brandColorsArray[identifier] {
-            return color
-        }
-        return UIColor.black
-    }
-    
-    class func color(fromAppColor appColor: AppColor) -> UIColor {
-        return color(fromStringID: appColor.rawValue)
-    }
-}
-
 @IBDesignable extension UILabel {
     
     @IBInspectable var brandTextColor: String {
         get { return self.brandTextColor }
-        set(newValue) { textColor = ColorHelper.color(fromStringID: newValue) }
+        set(newValue) {
+            if let newColorValue = AppColor(rawValue: newValue)?.color {
+                textColor = newColorValue
+            }
+        }
     }
 }
 
@@ -37,7 +25,11 @@ class ColorHelper {
     
     @IBInspectable var brandTitleColor: String {
         get { return self.brandTitleColor }
-        set(newValue) { setTitleColor(ColorHelper.color(fromStringID: newValue), for: .normal) }
+        set(newValue) {
+            if let newColorValue = AppColor(rawValue: newValue)?.color {
+                setTitleColor(newColorValue, for: .normal)
+            }
+        }
     }
 }
 
@@ -45,11 +37,19 @@ class ColorHelper {
     
     @IBInspectable var brandBarTintColor: String {
         get { return self.brandBarTintColor }
-        set(newValue) { barTintColor = ColorHelper.color(fromStringID: newValue) }
+        set(newValue) {
+            if let newColorValue = AppColor(rawValue: newValue)?.color {
+                barTintColor = newColorValue
+            }
+        }
     }
     
     @IBInspectable var brandNavigationTitleColor: String {
         get { return self.brandNavigationTitleColor }
-        set(newValue) { titleTextAttributes = [NSForegroundColorAttributeName: ColorHelper.color(fromStringID: newValue)] }
+        set(newValue) {
+            if let newColorValue = AppColor(rawValue: newValue)?.color {
+                titleTextAttributes = [NSForegroundColorAttributeName: newColorValue]
+            }
+        }
     }
 }

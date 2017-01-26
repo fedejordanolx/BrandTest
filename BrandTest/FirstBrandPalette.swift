@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Color {
+struct FirstBrandPalette {
     
     static let gray = UIColor.gray
     static let red = UIColor.red
